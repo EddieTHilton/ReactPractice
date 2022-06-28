@@ -7,7 +7,7 @@ import React from 'react';
 
 
 
-class App extends React.Component {
+class AppRandomFilm extends React.Component {
 
   //String dataDump = new String();
   
@@ -65,7 +65,7 @@ class App extends React.Component {
         <div className="App">
           <header className="App-header">
           
-          <img src={load} className="App-logo" alt="load" />
+            <img src={load} className="App-logo" alt="load" />
       
           </header>
         </div>);

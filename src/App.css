@@ -3,7 +3,32 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 22vh;
+  pointer-events: none;
+}
+
+.of51-img {
+  height: 22vh;
+  pointer-events: none;
+}
+
+.of52-img {
+  height: 22vh;
+  pointer-events: none;
+}
+
+.of53-img {
+  height: 22vh;
+  pointer-events: none;
+}
+
+.of54-img {
+  height: 22vh;
+  pointer-events: none;
+}
+
+.of55-img {
+  height: 22vh;
   pointer-events: none;
 }
 
@@ -14,7 +39,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +50,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0000EE;
 }
 
 @keyframes App-logo-spin {
@@ -33,6 +58,6 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
