@@ -1,7 +1,7 @@
-import load from './load.gif';
+import ETH_Logo from './ETH_Morse.png';
 
 
-import './App.css';
+import './Title.css';
 import AboutCreator from './AboutCreator'
 import React from 'react';
 
@@ -25,9 +25,13 @@ class NavList extends React.Component {
         <div className="NavList">
 
 
-            <header className="App-header">
+            <header className="Title-header">
               <Router>
                 <nav> 
+                  
+          
+                <img src={ETH_Logo} className="Title-logo" alt="ETH_Logo" />
+                  <h3>Welcome to</h3>
                   <h3>Eddie T. Hilton's Mega-Awesome Cinema Webapp</h3>
 
 

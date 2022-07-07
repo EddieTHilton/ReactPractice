@@ -11,7 +11,8 @@ class DummyPage extends React.Component {
 
 
   state = {
-    films: []
+    films: [],
+    box: {width: '600px', height: '300px', border: '1px solid grey'}
   };
 
   async componentDidMount(){
@@ -49,33 +50,35 @@ class DummyPage extends React.Component {
 
     }
 
+
+
     return (
-        <div className="DummyPage">
+        <div className="App">
           <header className="App-header">
             
             <p>
-              Welcome to <code>Dummy Page</code>
+              Welcome to <code>Movie List</code>
               <br />
               Come back soon for the upcoming random film picker.
               <br /><br />
               Also, checkout the creator at:
-              </p>
-            <p>
-
-            <br />
+            </p>
+          </header>
+          
+          <p>
               List of requested film(s):
               <br /><br />
               {films.map((film) => ( 
+                <div style={this.state.box}>
                     <ol key = { film.film_id } >
-                        ID No: { film.film_id }, Title: { film.title }
-                        , Description { film.description } 
+                        <br/><strong>{film.title}</strong> ({film.release_year}),<br/><strong>Description:</strong> {film.description}.<br/><strong>Movie ID:</strong> {film.film_id}
                         </ol>
+                </div>
+
               ))}
     
               <br /><br />
             </p>
-            
-          </header>
         </div>
       );
     

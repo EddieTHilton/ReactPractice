@@ -1,0 +1,40 @@
+.Title {
+    text-align: center;
+  }
+  
+  .Title-logo {
+    height: 22vh;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .Title-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .Title-header {
+    text-align: center;
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Title-link {
+    color: #0000EE;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  

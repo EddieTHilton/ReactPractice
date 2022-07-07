@@ -1,7 +1,7 @@
 import load from './load.gif';
 
 
-import './App.css';
+import './Title.css';
 import React from 'react';
 
 import {
@@ -24,48 +24,51 @@ class AboutCreator extends React.Component {
     <div className="AboutCreator">
 
 
-      <header className="App-header">
+      <header className="Title-header">
         
         <p>
           Checkout the creator at:
           </p>
         <p>
-          <li><a
-          className="App-link"
+          <a
+          className="Title-link"
           href="https://twitter.com/EddieTHilton"
           target="_blank"
           rel="noopener noreferrer"
         >
           @EddieTHilton on Twitter
         </a>
-        </li>
+        <br />
         
-          <li><a
-          className="App-link"
+        
+          <a
+          className="Title-link"
           href="https://www.linkedin.com/in/eddie-hilton-27930a143/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Eddie Hilton on LinkedIn
-        </a></li>
+        </a>
+        <br />
         
-          <li><a
-          className="App-link"
+          <a
+          className="Title-link"
           href="https://eddiethilton.wordpress.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Eddie T. Hilton on Wordpress
-        </a></li>
+        </a>
+        <br />
 
-        <li><a
-          className="App-link"
+        <a
+          className="Title-link"
           href="https://github.com/EddieTHilton"
           target="_blank"
           rel="noopener noreferrer"
         >
           EddieTHilton on GitHub
-        </a></li>
+        </a>
         <br />
         </p>
         

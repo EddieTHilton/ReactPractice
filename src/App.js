@@ -11,11 +11,11 @@ import NavList from './NavList.js'
 
 import {
   BrowserRouter as Router,
-  Routes,
-  Switch, 
+  Routes, 
   Route,
   Link
 } from "react-router-dom";
+import RandomFilm from './RandomFilm';
 
 
 
@@ -51,9 +51,10 @@ class App extends React.Component {
         <NavList />
         <Router>
           <div>
-            <Route path="/AboutCreator" component={BackupApp} />
+            <RandomFilm />
             <DummyPage />
             <AboutCreator />
+            
           </div>
         </Router>
         </div>
