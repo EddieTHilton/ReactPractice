@@ -12,7 +12,7 @@ class RandomFilm extends React.Component {
 
   state = {
     films: [],
-    box: {width: '600px', height: '300px', border: '1px solid grey'},
+    box: {width: '700px', height: '300px', border: '1px solid grey'},
     randomID: 0
   };
 
@@ -30,12 +30,13 @@ class RandomFilm extends React.Component {
 
   }
 
-
+  
   RandomiseID() {
     var rand = Math.floor(Math.random() * 200)
     this.setState({randomID: rand});
     return;
   }
+  
  
     
 
@@ -60,7 +61,7 @@ class RandomFilm extends React.Component {
     } else {
       //empty
     }
-    
+
     return (
 
       <div className="App">
@@ -77,7 +78,7 @@ class RandomFilm extends React.Component {
           
         <p>
           <br />
-          <button onClick={this.RandomiseID()} >
+          <button id="RandFilm" onClick={() => {this.RandomiseID()} } >
           Randomise Film
           </button>
           <br />
@@ -85,9 +86,9 @@ class RandomFilm extends React.Component {
           Random film ({ films[this.state.randomID].film_id }):
           <br />
           <br />
-          <div style={this.state.box}>
+          <div id="FilmBox" style={this.state.box}>
             <ol key = { films[this.state.randomID].film_id } >
-              <br/><strong> { films[this.state.randomID].title }</strong> {films[this.state.randomID].release_year},<br/><strong>Description:</strong> { films[this.state.randomID].description }.<br/><strong>Movie ID:</strong> { films[this.state.randomID].film_id }
+              <div id = "RandFilmTitle"><strong>{films[this.state.randomID].title}</strong></div> {films[this.state.randomID].release_year},<br/><strong>Description:</strong> { films[this.state.randomID].description }.<br/><strong>Movie ID:</strong> <div id="FilmID">{ films[this.state.randomID].film_id }</div>
             </ol>
           </div>
           <br />
@@ -97,6 +98,10 @@ class RandomFilm extends React.Component {
     );
     
   } 
+
+  
+    
+  
 
 }
 
